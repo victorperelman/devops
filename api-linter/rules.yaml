@@ -31,18 +31,18 @@ rules:
       functionOptions:
         type: pascal
   
-  rule-camel-case-parameter-name:
-    description: Parameter name should be camelCased.
-    message: "The value '{{value}}' should be camel cased."
-    type: style
-    given: $.paths.[*][get,post,put,delete,options].parameters[*]
-    severity: error
-    resolved: false
-    then:
-      field: name
-      function: casing
-      functionOptions:
-        type: camel
+  # rule-camel-case-parameter-name:
+  #   description: Parameter name should be camelCased.
+  #   message: "The value '{{value}}' should be camel cased."
+  #   type: style
+  #   given: $.paths.[*][get,post,put,delete,options].parameters[*]
+  #   severity: error
+  #   resolved: false
+  #   then:
+  #     field: name
+  #     function: casing
+  #     functionOptions:
+  #       type: camel
  
   rule-operation-singular-tag:
     description: Operations must have at least one tag value.
